@@ -31,17 +31,40 @@ The specific installation process can be referred to：MMClassification （https
 
 dataset:
 -----
-数据集格式可参考MMClassification的格式：CustomDataset (https://mmcls-test.readthedocs.io/zh-cn/latest/tutorials/new_dataset.html,具体的数据结构如下所示：
-mmclassification
-└── data
-    └── my_dataset
-        ├── meta
-        │   ├── train.txt
-        │   ├── val.txt
-        │   └── test.txt
-        ├── train
-        ├── val
-        └── test
+The dataset format can refer to the format of MMClassification:CustomDataset (https://mmcls-test.readthedocs.io/zh-cn/latest/tutorials/new_dataset.html,The specific data structure is as follows:
+>mmclassification
+>>data
+>>> my_dataset
+>>>> meta
+>>>>> train.txt
+>>>>>val.txt
+>>>>> test.txt
+>>>>train
+>>>> val
+>>>> test
 
 train:
 -----
+1: Go to the /mmclassification/configs directory and make sure that the models in the /mmclassification/mmpretrain/models/ folder are correctly registered.
+2:Go to /mmclassification/tools, and then execute the following command:
+```
+python train.py --config your_config --work-dir your_checkpointsavedir
+```
+test
+-----
+```
+python test.py --config your_config --work-dir your_resultsavedir --checkpoint your_checkpoint
+```
+> **⚠️ IMPORTANT NOTICE**  
+> This repository contains the official implementation of the research paper submitted to **The Visual Computer** journal.  
+> If you use this code in your research, please cite our paper:
+```bibtex
+@article{yuan2024tcrnet,
+  title={TCR-Net: A Hybrid Deep Learning Framework for Postoperative Recurrence Risk in Thyroid Cancer},
+  author={Yuan, Yuan and Zhang, Deping and Li, Eryong},
+  journal={The Visual Computer},
+  year={2024},
+  note={Under review}
+}
+```
+This repository references MMClassification(https://openmmlab.com/),ResNet(https://arxiv.org/abs/1512.03385), EfficientNetv2(https://arxiv.org/abs/2104.00298). Thanks to them.
