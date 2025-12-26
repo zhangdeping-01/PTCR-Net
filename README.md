@@ -4,6 +4,7 @@ Hybrid Deep Learning for Predicting Postoperative Recurrence in Papillary Thyroi
 Introduction
 ----
 Postoperative recurrence prediction in papillary thyroid carcinoma (PTC) remains a significant challenge for clinical management, primarily due to the highly overlapping imaging features between recurrent lesions and postoperative inflammatory changes, as well as the extreme scarcity of positive samples. These limitations often lead to detection delays with conventional approaches. To address this, we introduce PTCR-Net, a hybrid deep learning framework designed to enhance early recurrence prediction. The framework innovatively integrates a Coordinate Attention Residual Network (CAR-Net) for precise lesion localization and a Progressive Efficient Network (PE-Net) to ensure robust performance with limited samples. Experimental results demonstrate that PTCR-Net achieves an accuracy of 93.33% and an AUC of 96.10%, significantly outperforming traditional methods. By providing both high accuracy and interpretable decision support, this framework establishes a novel paradigm for personalized postoperative follow-up in PTC management.<br>  
+
 Environment
 
 1：Create a new conda environment with python version 3.8<br>  
