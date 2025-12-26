@@ -36,9 +36,9 @@ The dataset format can refer to the format of MMClassification:CustomDataset (ht
 >>data
 >>> my_dataset
 >>>> meta
->>>>> train.txt
->>>>>val.txt
->>>>> test.txt
+>>>>> train.txt<br>  
+>>>>>val.txt<br>  
+>>>>> test.txt<br>  
 >>>>train
 >>>> val
 >>>> test
