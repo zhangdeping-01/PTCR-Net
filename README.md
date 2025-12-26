@@ -32,7 +32,7 @@ The specific installation process can be referred to：MMClassification （https
 
 dataset:
 -----
-The dataset format can refer to the format of MMClassification:CustomDataset (https://mmcls-test.readthedocs.io/zh-cn/latest/tutorials/new_dataset.html,The specific data structure is as follows:
+The dataset format can refer to the format of MMClassification:CustomDataset (https://mmcls-test.readthedocs.io/zh-cn/latest/tutorials/new_dataset.html),The specific data structure is as follows:
 
 
 ```bash
@@ -48,9 +48,8 @@ mmclassification/
 │       └── test/             
 ```
 Due to patient privacy protection and ethics committee regulations, the clinical dataset cannot be publicly shared. Researchers can request access through the following process:<br>  
-Send an email to: your.email@university.edu.cn (replace with your actual email)<br>  
+Send an email to: Pangf6@mail.sysu.edu.cn <br>  
 Subject line: "TCR-Net Dataset Access Request - [Your Institution Name]"<br>  
-Required information (Pangf6@mail.sysu.edu.cn):<br>  
 
 train:
 -----
