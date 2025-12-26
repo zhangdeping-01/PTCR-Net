@@ -40,13 +40,17 @@ mmclassification/
 ├── data/
 │   └── my_dataset/
 │       ├── meta/
-│       │   ├── train.txt      # 训练集标注
-│       │   ├── val.txt        # 验证集标注
-│       │   └── test.txt       # 测试集标注
-│       ├── train/             # 训练图像
-│       ├── val/               # 验证图像
-│       └── test/              # 测试图像
+│       │   ├── train.txt     
+│       │   ├── val.txt       
+│       │   └── test.txt    
+│       ├── train/             
+│       ├── val/            
+│       └── test/             
 ```
+Due to patient privacy protection and ethics committee regulations, the clinical dataset cannot be publicly shared. Researchers can request access through the following process:<br>  
+Send an email to: your.email@university.edu.cn (replace with your actual email)<br>  
+Subject line: "TCR-Net Dataset Access Request - [Your Institution Name]"<br>  
+Required information (Pangf6@mail.sysu.edu.cn):<br>  
 
 train:
 -----
@@ -72,4 +76,7 @@ python test.py --config your_config --work-dir your_resultsavedir --checkpoint y
   note={Under review}
 }
 ```
+
+
+
 This repository references MMClassification(https://openmmlab.com/),ResNet(https://arxiv.org/abs/1512.03385), EfficientNetv2(https://arxiv.org/abs/2104.00298). Thanks to them.
