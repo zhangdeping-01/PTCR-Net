@@ -29,5 +29,19 @@ Install as a Python package: You just want to call MMClassification’s APIs or 
 The specific installation process can be referred to：MMClassification （https://mmcls-test.readthedocs.io/en/latest/install.html#install-from-source）<br>  
 5：Other packages can be found in the requirements.txt file.
 
+dataset:
+-----
+数据集格式可参考MMClassification的格式：CustomDataset (https://mmcls-test.readthedocs.io/zh-cn/latest/tutorials/new_dataset.html,具体的数据结构如下所示：
+mmclassification
+└── data
+    └── my_dataset
+        ├── meta
+        │   ├── train.txt
+        │   ├── val.txt
+        │   └── test.txt
+        ├── train
+        ├── val
+        └── test
 
+train:
 -----
