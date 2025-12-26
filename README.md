@@ -32,21 +32,25 @@ The specific installation process can be referred to：MMClassification （https
 dataset:
 -----
 The dataset format can refer to the format of MMClassification:CustomDataset (https://mmcls-test.readthedocs.io/zh-cn/latest/tutorials/new_dataset.html,The specific data structure is as follows:
->mmclassification
->>data
->>> my_dataset
->>>> meta
->>>>> train.txt<br>  
->>>>>val.txt<br>  
->>>>> test.txt<br>  
->>>>train
->>>> val
->>>> test
+
+
+```bash
+mmclassification/
+├── data/
+│   └── my_dataset/
+│       ├── meta/
+│       │   ├── train.txt      # 训练集标注
+│       │   ├── val.txt        # 验证集标注
+│       │   └── test.txt       # 测试集标注
+│       ├── train/             # 训练图像
+│       ├── val/               # 验证图像
+│       └── test/              # 测试图像
+```
 
 train:
 -----
-1: Go to the /mmclassification/configs directory and make sure that the models in the /mmclassification/mmpretrain/models/ folder are correctly registered.
-2:Go to /mmclassification/tools, and then execute the following command:
+1: Go to the /mmclassification/configs directory and make sure that the models in the /mmclassification/mmpretrain/models/ folder are correctly registered.<br>  
+2:Go to /mmclassification/tools, and then execute the following command:<br>  
 ```
 python train.py --config your_config --work-dir your_checkpointsavedir
 ```
